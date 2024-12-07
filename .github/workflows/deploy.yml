@@ -1,6 +1,4 @@
 name: Deploy
-with:
-  root: website
 on:
   push:
     branches: main
@@ -31,6 +29,7 @@ jobs:
 
       - name: Install step
         run: "deno task build"
+        working-directory: website
 
       - name: Build step
         run: "npm run build"
