@@ -1,11 +1,11 @@
 name: Deploy
+with:
+  root: website
 on:
   push:
     branches: main
   pull_request:
     branches: main
-with:
-  root: website
 jobs:
   deploy:
     name: Deploy
