@@ -4,9 +4,8 @@ on:
     branches: main
   pull_request:
     branches: main
-defaults:
-  run:
-    working-directory:./website
+with:
+  root: website
 jobs:
   deploy:
     name: Deploy
