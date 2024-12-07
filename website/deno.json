@@ -1,0 +1,23 @@
+{
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir npm:vite",
+    "build": "deno run -A --node-modules-dir npm:vite build",
+    "preview": "deno run -A --node-modules-dir npm:vite preview",
+    "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
+  },
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "jsxImportSourceTypes": "@types/react"
+  },
+  "imports": {
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.2",
+    "@types/react": "npm:@types/react@^19.0.0",
+    "@types/react-dom": "npm:@types/react-dom@^19.0.0",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.3.4",
+    "react-dom": "npm:react-dom@^19.0.0",
+    "@reduxjs/toolkit": "npm:@reduxjs/toolkit",
+    "vite": "npm:vite@^6.0.1"
+  }
+}
