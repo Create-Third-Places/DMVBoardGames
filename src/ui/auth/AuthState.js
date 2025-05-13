@@ -1,5 +1,6 @@
 export function setupAuth() {}
 
+//TODO: Add this variables to 'authState' and create 'authRequestState'
 export function isLoggedIn() {
   //TODO: Add logic
   return false;

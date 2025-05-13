@@ -28,7 +28,6 @@ export class LoginComponent extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log(showExperimental());
     this.innerHTML = this.generateHTML();
   }
 

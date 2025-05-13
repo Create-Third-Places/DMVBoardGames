@@ -57,6 +57,10 @@ export function initStateOnLoad(config) {
   });
 }
 
+export async function postResponseData(queryUrl, mockSettings) {
+  console.log("Not implemented");
+}
+
 export async function getResponseData(queryUrl, mockSettings) {
   try {
     if (

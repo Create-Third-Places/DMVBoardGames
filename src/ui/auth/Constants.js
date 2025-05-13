@@ -1,3 +1,4 @@
+//TODO: Rename this state to authRequestState"
 export const AUTH_STATE = "authState";
 
 export const LOGIN_FORM_ID = "login-form";
